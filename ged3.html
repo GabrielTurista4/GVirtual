@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Epic Day 3 - GVirtual</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Layout específico para a página de download */
+        .download-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-top: 15px;
+        }
+
+        /* Moldura retrô para a foto/ícone do arquivo */
+        .preview-box {
+            border: 2px solid #808080;
+            border-top: 2px solid #000000;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 4px;
+            background-color: #c0c0c0;
+            min-width: 120px;
+            max-width: 120px;
+        }
+
+        .preview-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Área de texto e informações do arquivo */
+        .info-box {
+            flex-grow: 1;
+        }
+
+        .file-details {
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border: 1px dashed #808080;
+            font-size: 13px;
+        }
+
+        /* Alinhamento do grande botão de download */
+        .action-container {
+            margin-top: 25px;
+            text-align: right;
+            border-top: 2px solid #c0c0c0;
+            padding-top: 15px;
+        }
+
+        /* Botão de download destacado estilo instalação antiga */
+        .btn-download {
+            font-size: 14px;
+            padding: 6px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <header class="navbar">
+        <div class="navbar-title">GVirtual</div>
+        <div class="navbar-buttons">
+            <a href="games.html" class="btn">Back</a>
+        </div>
+    </header>
+
+    <!-- Janela Principal -->
+    <main class="content-container">
+        
+        <!-- Faixa azul lisa clássica -->
+        <div class="window-title-bar"></div>
+
+        <!-- Corpo branco estilo assistente -->
+        <div class="window-body">
+            <h1>Download de Arquivo</h1>
+            <p>You Decided To Download The Following Game, Check The Informations Before Continuing.</p>
+            
+            <div class="download-layout">
+                <!-- Foto/Miniatura do arquivo -->
+                <div class="preview-box">
+                    <!-- Substitua pelo nome do seu arquivo de imagem na pasta -->
+                    <img src="ged3.png" alt="Miniatura" class="preview-img">
+                </div>
+
+                <!-- Descrição e Detalhes -->
+                <div class="info-box">
+                    <h3>Description:</h3>
+                    <p>
+                        is the third day of the epic week of gabriel, but this time a giant ball has made the bad stuff, so gabriel had to discover alot of new things to rescue chips. game made by me. music by me and witzy studios.
+                    </p>
+
+                    <!-- Caixa de detalhes técnicos bem anos 90 -->
+                    <div class="file-details">
+                        <b>File:</b> Gabriel Epic Day 3 (GPA).zip<br>
+                        <b>File Size:</b> 20.00 MB<br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de Ação -->
+            <div class="action-container">
+                <!-- Substitua o href pelo caminho do arquivo real que será baixado (ex: jogo.zip, instalador.exe) -->
+                <a href="Gabriel Epic Day 3 (GPA).zip" download class="btn btn-download">Download</a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

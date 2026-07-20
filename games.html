@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - GVirtual</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .image-link-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* Moldura retrô ao redor da imagem */
+        .retro-image {
+            border: 2px solid #808080;
+            border-top: 2px solid #000000;
+            border-left: 2px solid #000000;
+            border-right: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            padding: 2px;
+            background-color: #c0c0c0;
+            max-width: 20%;
+            height: auto;
+            display: inline-block;
+        }
+
+        /* Efeito de clique invertendo a borda */
+        .image-link-container a:active .retro-image {
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #808080;
+            border-bottom: 2px solid #808080;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <header class="navbar">
+        <div class="navbar-title">GVirtual</div>
+        <div class="navbar-buttons">
+            <a href="index.html" class="btn">Back</a>
+        </div>
+    </header>
+
+    <!-- Janela do Windows -->
+    <main class="content-container">
+        
+        <div class="window-title-bar"></div>
+
+        <div class="window-body">
+            <h1>Games:</h1>
+            
+            <div class="image-link-container">
+                <a href="ged3.html" target="_blank">
+                    <!-- Mude aqui para o nome da sua imagem na pasta -->
+                    <img src="ged3.png" alt="Link Recomendado" class="retro-image">
+                </a>
+            </div>
+        </div>
+
+</main>
+
+</body>
+</html>
